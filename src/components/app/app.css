@@ -1,0 +1,47 @@
+body{
+  color: white;
+  background-color: #000000e3;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 5px;
+}
+
+.container h2{
+  align-self: center;
+}
+
+.row{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.left{
+  margin-right: 15px;
+}
+
+.block{
+  flex: 1;
+  color: white;
+  background: #45434375;
+  border-radius: 15px;
+}
+
+@media (max-width: 700px) {
+  .row{
+    flex-flow: column nowrap;
+  }
+  .block{
+    margin: 0;
+  }
+  .left{
+    margin-bottom: 10px;
+  }
+}
